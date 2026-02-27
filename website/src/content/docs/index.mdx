@@ -1,0 +1,33 @@
+---
+title: "Infill"
+description: Everything I know
+template: splash
+hero:
+  tagline: "Design your own 3D printer from scratch. Get funding from Hack Club to build it. Join #infill on Hack Club Slack to get started. Due April 10, 2026"
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Get Started
+      link: /overview/getting-started
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import EmailSignup from '../../components/EmailSignup';
+
+<EmailSignup client:load />
+
+<CardGrid>
+	<Card title="Design a 3D printer" icon="pencil">
+		Start designing!
+	</Card>
+	<Card title="Get funding to build it" icon="add-document">
+		You'll get a $350 grant to buy parts for your printer
+	</Card>
+	<Card title="Tune it to work" icon="setting">
+		Once the printer is built, keep tuning it until you get a perfect benchy from it!
+	</Card>
+	<Card title="Get flown to RMRRF 2026" icon="rocket">
+		Join our table from April 18-19
+	</Card>
+</CardGrid>
